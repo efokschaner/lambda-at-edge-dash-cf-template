@@ -1,5 +1,12 @@
 # A stock Lambda@Edge CloudWatch Dashboard that works
 
+## Why might I need this?
+- You're using [AWS Lambda@Edge](https://docs.aws.amazon.com/lambda/latest/dg/lambda-edge.html).
+- You've noticed that the stock "Monitoring" tab, that displays "CloudWatch metrics at a glance", is not working.
+- You wish to have those graphs of "Invocations", "Duration", "Errors, Availability (%)", and "Throttles", for all AWS regions.
+
+Then this might be the solution for you.
+
 ## How to use
 The file [lambda-edge-dash.template.json](./lambda-edge-dash.template.json?raw=true) contains the CloudFormation template.
 You can use the template via whatever approach to CloudFormation you are comfortable with.
