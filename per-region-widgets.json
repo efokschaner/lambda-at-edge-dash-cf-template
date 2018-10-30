@@ -1,0 +1,1249 @@
+{
+    "widgets": [
+        {
+            "type": "text",
+            "x": 0,
+            "y": 0,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# US East (N. Virginia) - us-east-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 1,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 1,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 7,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "us-east-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 7,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "us-east-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 13,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# US East (Ohio) - us-east-2"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 14,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-2",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 14,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-east-2",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 20,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "us-east-2",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 20,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "us-east-2",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 26,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# US West (N. California) - us-west-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 27,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-west-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 27,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-west-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 33,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "us-west-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 33,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "us-west-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 39,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# US West (Oregon) - us-west-2"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 40,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-west-2",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 40,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "us-west-2",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 46,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "us-west-2",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 46,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "us-west-2",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 52,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Canada (Central) - ca-central-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 53,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ca-central-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 53,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ca-central-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 59,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ca-central-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 59,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ca-central-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 65,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# EU (Frankfurt) - eu-central-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 66,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-central-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 66,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-central-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 72,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "eu-central-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 72,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "eu-central-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 78,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# EU (Ireland) - eu-west-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 79,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 79,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 85,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "eu-west-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 85,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "eu-west-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 91,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# EU (London) - eu-west-2"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 92,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-2",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 92,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-2",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 98,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "eu-west-2",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 98,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "eu-west-2",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 104,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# EU (Paris) - eu-west-3"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 105,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-3",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 105,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "eu-west-3",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 111,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "eu-west-3",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 111,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "eu-west-3",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 117,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Asia Pacific (Tokyo) - ap-northeast-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 118,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 118,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 124,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ap-northeast-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 124,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ap-northeast-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 130,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Asia Pacific (Seoul) - ap-northeast-2"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 131,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-2",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 131,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-northeast-2",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 137,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ap-northeast-2",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 137,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ap-northeast-2",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 143,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Asia Pacific (Singapore) - ap-southeast-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 144,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 144,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 150,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ap-southeast-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 150,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ap-southeast-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 156,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Asia Pacific (Sydney) - ap-southeast-2"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 157,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-2",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 157,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-southeast-2",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 163,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ap-southeast-2",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 163,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ap-southeast-2",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 169,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# Asia Pacific (Mumbai) - ap-south-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 170,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-south-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 170,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "ap-south-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 176,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "ap-south-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 176,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "ap-south-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "text",
+            "x": 0,
+            "y": 182,
+            "width": 24,
+            "height": 1,
+            "properties": {
+                "markdown": "# South America (São Paulo) - sa-east-1"
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 183,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Duration", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Average", "period": 300 } ],
+                    [ "...", { "stat": "Maximum", "period": 300 } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "sa-east-1",
+                "title": "Duration",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 183,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Invocations", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "view": "timeSeries",
+                "stacked": false,
+                "region": "sa-east-1",
+                "title": "Invocations",
+                "period": 300
+            }
+        },
+        {
+            "type": "metric",
+            "x": 0,
+            "y": 189,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Errors", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "id": "errors", "stat": "Sum" } ],
+                    [ ".", "Invocations", ".", ".", ".", ".", { "id": "invocations", "stat": "Sum", "visible": false } ],
+                    [ { "expression": "100 - 100 * errors / invocations", "label": "Availability (%)", "id": "availability", "yAxis": "right" } ]
+                ],
+                "region": "sa-east-1",
+                "title": "Errors, Availability (%)",
+                "yAxis": {
+                    "right": {
+                        "max": 100
+                    }
+                },
+                "view": "timeSeries",
+                "stacked": false
+            }
+        },
+        {
+            "type": "metric",
+            "x": 12,
+            "y": 189,
+            "width": 12,
+            "height": 6,
+            "properties": {
+                "metrics": [
+                    [ "AWS/Lambda", "Throttles", "FunctionName", "us-east-1.testLambdaPlsIgnore", "Resource", "us-east-1.testLambdaPlsIgnore:3", { "stat": "Sum" } ]
+                ],
+                "region": "sa-east-1",
+                "view": "timeSeries",
+                "stacked": false
+            }
+        }
+    ]
+}
